@@ -1,4 +1,8 @@
+package VIEW;
 
+
+import DTO.ProdutosDTO;
+import DAO.ProdutosDAO;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
@@ -140,7 +144,7 @@ public class listagemVIEW extends javax.swing.JFrame {
         
         ProdutosDAO produtosdao = new ProdutosDAO();
         
-        //produtosdao.venderProduto(Integer.parseInt(id));
+        produtosdao.venderProduto(Integer.parseInt(id));
         listarProdutos();
     }//GEN-LAST:event_btnVenderActionPerformed
 

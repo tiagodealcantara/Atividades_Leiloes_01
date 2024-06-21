@@ -1,3 +1,5 @@
+package DAO;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -8,6 +10,8 @@
  * @author Adm
  */
 
+import DAO.config.conectaDAO;
+import DTO.ProdutosDTO;
 import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
@@ -76,7 +80,20 @@ public class ProdutosDAO {
         return listagem;
     }
     
-    
+      public void venderProduto(int id){
+            String sql = "update produtos set status = 'Vendido' where id = ?;";
+        try {
+            conn = new conectaDAO().connectDB();
+            prep = conn.prepareStatement(sql);
+            prep.setInt(1, id);
+            prep.executeUpdate();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+   
+        
+    }  
     
         
 }
