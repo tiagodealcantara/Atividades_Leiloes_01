@@ -58,14 +58,6 @@ public class ProdutosDAO {
             prep = conn.prepareStatement(sql);
             resultset = prep.executeQuery();
 
-            //DefaultTableModel model = new DefaultTableModel();
-            //model.addColumn("Nome Cliente");
-            //model.addColumn("Telefone");
-            //model.addColumn("Nome Serviço");
-            //model.addColumn("Valor Serviço");
-            //model.addColumn("Acrescimos Diversos");
-            //model.addColumn("Desconto");
-            //model.addColumn("Valor Total");
 
             
             while (resultset.next()) {
