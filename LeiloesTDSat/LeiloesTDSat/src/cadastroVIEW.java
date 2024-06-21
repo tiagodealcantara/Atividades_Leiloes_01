@@ -161,7 +161,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
         
         
         } catch (Exception e) {
-           JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + e.getMessage());
+           JOptionPane.showMessageDialog(null, "Erro no cadastro do produto!");
         }
         
 
