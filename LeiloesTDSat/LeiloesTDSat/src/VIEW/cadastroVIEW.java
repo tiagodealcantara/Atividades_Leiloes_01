@@ -1,4 +1,8 @@
+package VIEW;
 
+
+import DTO.ProdutosDTO;
+import DAO.ProdutosDAO;
 import javax.swing.JOptionPane;
 
 /*
